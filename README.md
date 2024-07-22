@@ -21,7 +21,7 @@ This project is a professional and responsive landing page for Brains Media Solu
 
 ## Live Demo
 
-You can view the live demo of the project here: [Brains Media Solutions - Landing Page](https://ajcommerce.netlify.app/)
+You can view the live demo of the project here: [Brains Media Solutions - Landing Page]https://ajith12344.github.io/BrainMedia-Solutions/
 
 ## Installation
 
@@ -116,7 +116,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any inquiries or further information, please contact:
 
-- **Email**: your.email@example.com
+- **Email**: ajithhuggi41@gmail.com
 - **Website**:https://main--ajithhugi.netlify.app/
 
 ---
