@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brains Media Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    /* Custom styles and animations */
+    .fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .slide-in {
+      animation: slideIn 1s ease-out;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .hover-effect {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-effect:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Scroll to Top Button */
+    .scroll-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background-color: #1f2937;
+      color: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .scroll-to-top.show {
+      opacity: 1;
+    }
+
+    .scroll-to-top:hover {
+      background-color: #374151;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-['Roboto']">
+
+  <!-- Menu Bar -->
+  <nav id="menu-bar" class="bg-gray-800 text-white p-4 fixed w-full top-0 left-0 z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center flex-shrink-0">
+        <span class="text-2xl font-bold">Brains Media Solutions</span>
+      </div>
+      <ul class="flex flex-grow justify-end space-x-6 text-lg font-medium">
+        <li><a href="./index.html" class="hover:text-gray-400 transition">Home</a></li>
+        <li><a href="./about.html" class="hover:text-gray-400 transition">About Us</a></li>
+        <li><a href="./objectives.html" class="hover:text-gray-400 transition">Mission</a></li>
+        <li><a href="./vision.html" class="hover:text-gray-400 transition">Vision</a></li>
+        <li><a href="./services.html" class="hover:text-gray-400 transition">Services</a></li>
+        <li><a href="./contact.html" class="hover:text-gray-400 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Slider -->
+  <section id="slider" class="relative overflow-hidden h-72 mt-16">
+    <div class="absolute inset-0 flex justify-between items-center">
+      <button class="prev bg-gray-800 bg-opacity-50 text-white p-3 rounded-full">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="next bg-gray-800 bg-opacity-50 text-white p-3 rounded-full">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+    <div class="slide active fade-in">
+      <img src="assets/R.jpeg" alt="Slide 1" class="object-cover w-full h-full">
+      <div class="caption absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full text-center">Welcome to Brains Media Solutions</div>
+    </div>
+    <div class="slide fade-in">
+      <img src="assets/p.jpeg" alt="Slide 2" class="object-cover w-full h-full">
+      <div class="caption absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full text-center">Innovative Web Solutions</div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-16 px-4 md:px-8 bg-white">
+    <div class="container mx-auto max-w-6xl">
+      <!-- Heading -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+          Digital Marketing Company in Belgaum, India
+        </h1>
+      </div>
+
+      <!-- Content -->
+      <div class="flex flex-col md:flex-row items-center md:space-x-8">
+        <!-- Text Content -->
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+            <span class="font-semibold">Brains Media Solutions</span> is a leading digital marketing service provider located near Hubli, Karnataka. We deliver exceptional quality and efficient work to enhance your online presence across social media platforms, including Facebook, Instagram, and LinkedIn.
+          </p>
+          <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+            Our expertise spans Website Designing, Search Engine Optimization (SEO), Google Ads, Social Media Marketing, and more. Our extensive experience positions us as a top digital marketing agency in Belgaum, India.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Our team of professional digital marketers, content writers, and creative designers is dedicated to delivering impeccable results within specified timelines.
+          </p>
+        </div>
+
+        <!-- Image -->
+        <div class="md:w-1/2">
+          <img src="assets/obj.jpeg" alt="Team at Brains Media Solutions" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Mission -->
+<section id="mission" class="py-16 bg-gray-200 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-blue-600">Our Mission</h2>
+    <p class="max-w-2xl mx-auto text-lg text-gray-700 leading-relaxed fade-in">
+      At Brains Media Solutions, our mission is to empower businesses with innovative digital marketing strategies and cutting-edge web development solutions. We are committed to enhancing your online presence and driving sustainable growth through tailored solutions that meet your unique needs. Our focus is on delivering exceptional quality and measurable results, fostering long-term partnerships with our clients.
+    </p>
+    <div class="mt-8">
+      <i class="fas fa-bullseye text-5xl text-blue-600"></i>
+    </div>
+  </section>
+  
+  <!-- Vision -->
+  <section id="vision" class="py-16 text-center bg-white">
+    <h2 class="text-3xl font-bold mb-4 text-green-600">Our Vision</h2>
+    <p class="max-w-2xl mx-auto text-lg text-gray-700 leading-relaxed fade-in">
+      Our vision is to be a global leader in digital marketing and web development, setting new standards of excellence in the industry. We aim to inspire and transform businesses by leveraging innovative technologies and creative strategies. Our goal is to create impactful digital experiences that connect brands with their audience, drive engagement, and achieve remarkable success.
+    </p>
+    <div class="mt-8">
+      <i class="fas fa-eye text-5xl text-green-600"></i>
+    </div>
+  </section>
+  
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-200 text-center">
+    <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+    <div class="flex flex-wrap justify-center space-x-4">
+      <div class="service bg-white p-6 m-4 shadow-lg hover:shadow-xl transition-shadow rounded-lg hover:scale-105">
+        <i class="fas fa-share-alt text-5xl text-blue-500 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Social Media Posts</h3>
+        <p>Engage your audience with compelling social media posts tailored to your brand.</p>
+      </div>
+      <div class="service bg-white p-6 m-4 shadow-lg hover:shadow-xl transition-shadow rounded-lg hover:scale-105">
+        <i class="fas fa-laptop-code text-5xl text-blue-500 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Website Designing</h3>
+        <p>Create stunning and functional websites that attract and retain customers.</p>
+      </div>
+      <div class="service bg-white p-6 m-4 shadow-lg hover:shadow-xl transition-shadow rounded-lg hover:scale-105">
+        <i class="fas fa-pen-nib text-5xl text-blue-500 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Content Writing</h3>
+        <p>High-quality content that engages your audience and improves your online presence.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto text-center">
+      <p class="text-lg mb-4">© 2024 Brains Media Solutions. All Rights Reserved.</p>
+      <div class="flex justify-center space-x-4">
+        <a href="#" class="text-gray-400 hover:text-white transition">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white transition">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white transition">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white transition">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <div id="scroll-to-top" class="scroll-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+  <script>
+    // Slider functionality
+    const slides = document.querySelectorAll('.slide');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    prevButton.addEventListener('click', () => {
+      currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
+      showSlide(currentSlide);
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
+      showSlide(currentSlide);
+    });
+
+    // Scroll to Top Button functionality
+    const scrollToTopButton = document.getElementById('scroll-to-top');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        scrollToTopButton.classList.add('show');
+      } else {
+        scrollToTopButton.classList.remove('show');
+      }
+    });
+
+    scrollToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
