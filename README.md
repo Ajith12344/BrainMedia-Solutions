@@ -21,7 +21,7 @@ This project is a professional and responsive landing page for Brains Media Solu
 
 ## Live Demo
 
-You can view the live demo of the project here: [Brains Media Solutions - Landing Page]https://ajith12344.github.io/BrainMedia-Solutions/
+You can view the live demo of the project here: https://ajith12344.github.io/BrainMedia-Solutions/
 
 ## Installation
 
@@ -121,4 +121,3 @@ For any inquiries or further information, please contact:
 
 ---
 
-Feel free to customize the README further based on your specific needs and project details!
