@@ -1,5 +1,3 @@
-# BrainMedia-Solutions
-Sure! Below is a detailed README file for your project, covering all essential aspects such as setup instructions, features, and contributions. This file is structured to provide clarity on the project and guide users and developers.
 
 ---
 
